@@ -136,15 +136,19 @@ body {
 	margin: auto;
 }
 #video-mask {
-	aspect-ratio: 240.5/100;
+
+	--height: 50vh;
+	--width: calc(var(var(--height)) * 2);
+	height: var(--height);
+	width: var(--width);
 	display: grid;
-	overflow: hidden;
+
 	align-content: center;
 	transition: 1s;
 }
 
-iframe {
+/* iframe {
 	width: 80vw;
 	height: 53.33333333vw;
 	margin-top: -0.35vw;
-}
+} */

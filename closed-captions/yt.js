@@ -4,7 +4,9 @@ function onYouTubeIframeAPIReady() {
 	player = new YT.Player('video-placeholder', {
 		width: 600,
 		height: 400,
-		videoId: 'vrP-_T-h9YM',
+		videoId: 'ipPC8SF6LxY',
+		// ipPC8SF6LxY
+		// vrP-_T-h9YM
 		playerVars: {
 			color: 'white',
 			//start: 
@@ -55,7 +57,7 @@ function updateTimerDisplay(){
 		i++;
 	}
 // Change 136.1 to the length of your own video in seconds
-	if ( t < 136.1) {
+	if ( t < 131) {
 		setTimeout(() => {
 			updateTimerDisplay();
 		}, 100);
