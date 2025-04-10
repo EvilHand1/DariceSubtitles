@@ -22,19 +22,19 @@ captions[15] = ['10','11'];
 	
 // aliens appear
 captions[16] = ['30.9','33.8'];
-captions[17] = ['33.9','55.6'];
-captions[18] = ['55.7','60.0'];
-captions[19] = ['60','64.7'];
+captions[17] = ['33.8','54.8']
+captions[18] = ['33.9','55.1'];
+captions[19] = ['55.2','60.0'];
+captions[20] = ['60','64.7'];
 
 
 	//big alien
-captions[20] = ['64.7','66.1'];
-captions[21] = ['67.6','68.0'];
-captions[22] = ['71.0','72.2'];
-captions[23] = ['73.3','74.0'];
+captions[21] = ['64.7','66.1'];
+captions[22] = ['67.6','68.0'];
+captions[23] = ['71.0','72.2'];
+captions[24] = ['73.3','74.0'];
 
 //Did they teach you how to feel, finger to finger?
-captions[24] = ['120','121'];
 captions[25] = ['120','121'];
 captions[26] = ['120','121'];
 	//Do you long for having your heart interlinked?
@@ -69,4 +69,5 @@ captions[47] = ['120','121'];
 
 // //end manual labour
 captions[48] = ['120','121'];
+captions[49] = ['120','121'];
 

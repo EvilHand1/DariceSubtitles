@@ -22,6 +22,7 @@ function onYouTubeIframeAPIReady() {
 function initialize(){
 	// Update the controls on load
 	addSpans();
+	RandomizeWords();
 }
 function addSpans(){
 	var ps = document.querySelectorAll('#closed-captions p');
@@ -34,9 +35,39 @@ function addSpans(){
 		});
 		ps[i].innerHTML = result;
 		ps[i].classList.add('p' + i);
-		i++;
+		i++;		
 	}
 	updateTimerDisplay();
+}
+
+function RandomizeWords() {
+	const spans = document.querySelectorAll('.p18 span');
+	console.log(spans);
+	spans.forEach(span => {
+		const fontSize = Math.random() * 2 + 1;
+		const left = Math.random() * 85 - 30;
+
+		let top;
+		if (left > -5 && left < 35) {
+			top = (Math.random() < 0.5)
+				? Math.random() * 8 + 5
+				: -(Math.random() * 20 + 55);
+		} else {
+			top = Math.random() * 88 - 75;
+		}
+		const rotate = Math.random() * 30 - 15;
+		const animationTime = Math.random() * (1.2 - 0.4) + 0.4;
+		const animationDelay = Math.random() * 2;
+
+		span.style.position = 'absolute';
+		span.style.fontSize = `${fontSize}rem`;
+		span.style.left = `${left}dvw`;
+		span.style.top = `${top}dvh`;
+		span.style.rotate = `${rotate}deg`;
+		span.style.animationDuration = animationTime + 's';
+		span.style.animationDelay = animationDelay + 's';
+		
+	});
 }
 
 function updateTimerDisplay(){
