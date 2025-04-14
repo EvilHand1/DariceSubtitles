@@ -40,19 +40,24 @@ You probably want to change the styling.
 
 .p18 span{
 	font-family: brenner;
-	animation: heavy-shake infinite;
+	
 }
-/* .p18 { */
-	/* position: relative;
+/* .p18 {
+	 position: relative;
   }
-  
+  */
   .p18 span {
 	position: absolute;
 	opacity: 0;
 	font-family: brenner;
 	transition: opacity 0.5s;
-  } */
+  } 
   
+  .p18.on span{
+	opacity: 1;
+	transition: 0s 1.5s;
+	animation: heavy-shake infinite;
+  }
   /* .p18.on span:nth-of-type(1) {
 	top: -30em;
 	left: -20em;

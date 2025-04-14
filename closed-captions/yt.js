@@ -66,6 +66,8 @@ function RandomizeWords() {
 		span.style.rotate = `${rotate}deg`;
 		span.style.animationDuration = animationTime + 's';
 		span.style.animationDelay = animationDelay + 's';
+		// span.style.opacity = 1;
+
 		
 	});
 }
