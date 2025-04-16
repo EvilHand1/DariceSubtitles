@@ -58,81 +58,13 @@ You probably want to change the styling.
 	transition: opacity 0.5s;
   } 
 
-/* 10th comes in first */
-.p18.on span:nth-of-type(10n) {
-	opacity: 1;
-	transition: opacity 0.2s 0s;
-}
-
-/* Then 9th */
-.p18.on span:nth-of-type(9n) {
-	opacity: 1;
-	transition: opacity 0.3s 0.5s;
-}
-
-/* Then 7th */
-.p18.on span:nth-of-type(7n) {
-	opacity: 1;
-	transition: opacity 0.3s 1s;
-}
-
-/* Then 4th */
-.p18.on span:nth-of-type(4n) {
-	opacity: 1;
-	transition: opacity 0.3s 1.5s;
-}
-
-/* Then 3rd */
-.p18.on span:nth-of-type(3n) {
-	opacity: 1;
-	transition: opacity 0.3s 2.3s;
-}
 
 /* The rest (fallback for unmatched spans) */
 .p18.on span {
 	animation: heavy-shake infinite;
 	opacity: 1;
-	transition: opacity 0.3s 6.8s;
-}
-
-/* 10th fades out first */
-#closed-captions .p18.on.off span:nth-of-type(10n) {
-	opacity: 0;
 	transition: opacity 0.3s 0s;
 }
-
-/* Then 9th */
-#closed-captions .p18.on.off span:nth-of-type(9n) {
-	opacity: 0;
-	transition: opacity 0.3s .5s;
-}
-
-/* Then 7th */
-#closed-captions .p18.on.off span:nth-of-type(7n) {
-	opacity: 0;
-	transition: opacity 0.3s 1s;
-}
-
-/* Then 4th */
-#closed-captions .p18.on.off span:nth-of-type(4n) {
-	opacity: 0;
-	transition: opacity 0.3s 1.5s;
-}
-
-/* Then 3rd */
-#closed-captions .p18.on.off span:nth-of-type(3n) {
-	opacity: 0;
-	transition: opacity 0.3s 2s;
-}
-
-/* The rest (fallback for unmatched spans) */
-#closed-captions .p18.on.off span {
-	animation: heavy-shake infinite;
-	opacity: 0;
-	transition: opacity 0.3s 6.8s;
-}
-
-
 
 
   /* .p18.on span:nth-of-type(1) {
