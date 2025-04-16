@@ -43,6 +43,7 @@ function addSpans(){
 function RandomizeWords() {
 	const spans = document.querySelectorAll('.p18 span');
 	console.log(spans);
+	let ID = .2;
 	spans.forEach(span => {
 		const fontSize = Math.random() * 2 + 1;
 		const left = Math.random() * 85 - 30;
@@ -58,14 +59,15 @@ function RandomizeWords() {
 		const rotate = Math.random() * 30 - 15;
 		const animationTime = Math.random() * (1.2 - 0.4) + 0.4;
 		const animationDelay = Math.random() * 2;
-
+		const transition = ID + 0.1;
 		span.style.position = 'absolute';
 		span.style.fontSize = `${fontSize}rem`;
 		span.style.left = `${left}dvw`;
 		span.style.top = `${top}dvh`;
 		span.style.rotate = `${rotate}deg`;
 		span.style.animationDuration = animationTime + 's';
-		span.style.animationDelay = animationDelay + 's';
+		span.style.animationDelay = (animationDelay) + 's';
+		// span.style.transition = 'opacity 0.5s ' + transition + 's';
 		// span.style.opacity = 1;
 
 		

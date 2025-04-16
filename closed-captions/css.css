@@ -13,12 +13,14 @@ Feel free to adjust the defaults to your needs.
 }
 #closed-captions .on {
 	opacity: 1;
-	background: red;
+	font-family: sans-serif;
+	color: white;
+	background-color: black;
+	font-size: 1rem;
 }
 #closed-captions .off {
 	transition: .2s;
 	opacity: 0;
-	background: red;
 }
 .voice1 {
 	font-style: italic;
@@ -27,7 +29,13 @@ Feel free to adjust the defaults to your needs.
 	font-weight: bold;
 }
 
-
+.MonsterCue {
+	font-family: sans-serif;
+	color: white;
+	background-color: black;
+	font-size: 2rem;
+	left: 47%;
+}
 
 /* **********************************************
 The first paragraph, with extended timing for 
@@ -38,10 +46,6 @@ The first paragraph, with extended timing for
 You probably want to change the styling.
 ********************************************** */
 
-.p18 span{
-	font-family: brenner;
-	
-}
 /* .p18 {
 	 position: relative;
   }
@@ -50,14 +54,87 @@ You probably want to change the styling.
 	position: absolute;
 	opacity: 0;
 	font-family: brenner;
+	color: black;
 	transition: opacity 0.5s;
   } 
-  
-  .p18.on span{
+
+/* 10th comes in first */
+.p18.on span:nth-of-type(10n) {
 	opacity: 1;
-	transition: 0s 1.5s;
+	transition: opacity 0.2s 0s;
+}
+
+/* Then 9th */
+.p18.on span:nth-of-type(9n) {
+	opacity: 1;
+	transition: opacity 0.3s 0.5s;
+}
+
+/* Then 7th */
+.p18.on span:nth-of-type(7n) {
+	opacity: 1;
+	transition: opacity 0.3s 1s;
+}
+
+/* Then 4th */
+.p18.on span:nth-of-type(4n) {
+	opacity: 1;
+	transition: opacity 0.3s 1.5s;
+}
+
+/* Then 3rd */
+.p18.on span:nth-of-type(3n) {
+	opacity: 1;
+	transition: opacity 0.3s 2.3s;
+}
+
+/* The rest (fallback for unmatched spans) */
+.p18.on span {
 	animation: heavy-shake infinite;
-  }
+	opacity: 1;
+	transition: opacity 0.3s 6.8s;
+}
+
+/* 10th fades out first */
+#closed-captions .p18.on.off span:nth-of-type(10n) {
+	opacity: 0;
+	transition: opacity 0.3s 0s;
+}
+
+/* Then 9th */
+#closed-captions .p18.on.off span:nth-of-type(9n) {
+	opacity: 0;
+	transition: opacity 0.3s .5s;
+}
+
+/* Then 7th */
+#closed-captions .p18.on.off span:nth-of-type(7n) {
+	opacity: 0;
+	transition: opacity 0.3s 1s;
+}
+
+/* Then 4th */
+#closed-captions .p18.on.off span:nth-of-type(4n) {
+	opacity: 0;
+	transition: opacity 0.3s 1.5s;
+}
+
+/* Then 3rd */
+#closed-captions .p18.on.off span:nth-of-type(3n) {
+	opacity: 0;
+	transition: opacity 0.3s 2s;
+}
+
+/* The rest (fallback for unmatched spans) */
+#closed-captions .p18.on.off span {
+	animation: heavy-shake infinite;
+	opacity: 0;
+	transition: opacity 0.3s 6.8s;
+}
+
+
+
+
   /* .p18.on span:nth-of-type(1) {
 	top: -30em;
 	left: -20em;
@@ -158,12 +235,12 @@ Sounds.
 *********************************************  */
 
 .sound1 {
-	background: rgb(168, 168, 168);
+	background: rgb(71, 71, 71);
 }
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 .sound1 #video-mask {
-	box-shadow: 2em 2em 2em rgb(102, 102, 102);
+	box-shadow: 2em 2em 2em rgb(0, 0, 29);
 }
 
 
