@@ -13,10 +13,6 @@ Feel free to adjust the defaults to your needs.
 }
 #closed-captions .on {
 	opacity: 1;
-	font-family: sans-serif;
-	color: white;
-	background-color: black;
-	font-size: 1rem;
 }
 #closed-captions .off {
 	transition: .2s;
@@ -34,7 +30,7 @@ Feel free to adjust the defaults to your needs.
 	color: white;
 	background-color: black;
 	font-size: 2rem;
-	left: 47%;
+	left: 46%;
 }
 
 /* **********************************************
