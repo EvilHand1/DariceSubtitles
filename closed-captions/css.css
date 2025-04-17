@@ -33,6 +33,20 @@ Feel free to adjust the defaults to your needs.
 	left: 46%;
 }
 
+.audiocue{
+	font-family: sans-serif;
+	color: white;
+	background-color: black;
+	font-size: 2rem;
+	left: 40%;
+}
+.voice5 {
+	font-family: sans-serif;
+	color: white;
+	background-color: black;
+	font-size: 2rem;
+	left: 46%;
+}
 /* **********************************************
 The first paragraph, with extended timing for 
 	all siblings. Basically what it does is that
@@ -92,117 +106,46 @@ You probably want to change the styling.
 }
 
 /* 10th fades out first */
-#closed-captions .p18.on.off span:nth-of-type(10n) {
+#closed-captions .p18.off span:nth-of-type(10n) {
 	opacity: 0;
-	transition: opacity 0.3s 0s;
+	transition: opacity 3s 6.5s;
 }
 
 /* Then 9th */
-#closed-captions .p18.on.off span:nth-of-type(9n) {
+#closed-captions .p18.off span:nth-of-type(9n) {
 	opacity: 0;
-	transition: opacity 0.3s .5s;
+	transition: opacity 3s .5s;
 }
 
 /* Then 7th */
-#closed-captions .p18.on.off span:nth-of-type(7n) {
+#closed-captions .p18.off span:nth-of-type(7n) {
 	opacity: 0;
-	transition: opacity 0.3s 1s;
+	transition: opacity 3s 1s;
 }
 
 /* Then 4th */
-#closed-captions .p18.on.off span:nth-of-type(4n) {
+#closed-captions .p18.off span:nth-of-type(4n) {
 	opacity: 0;
-	transition: opacity 0.3s 1.5s;
+	transition: opacity 3s 1.5s;
 }
 
 /* Then 3rd */
-#closed-captions .p18.on.off span:nth-of-type(3n) {
+#closed-captions .p18.off span:nth-of-type(3n) {
 	opacity: 0;
-	transition: opacity 0.3s 2s;
+	transition: opacity 3s 0s;
 }
 
 /* The rest (fallback for unmatched spans) */
-#closed-captions .p18.on.off span {
+#closed-captions .p18.off span {
 	animation: heavy-shake infinite;
 	opacity: 0;
-	transition: opacity 0.3s 6.8s;
+	transition: opacity 3s 6s;
 }
 
-
-
-
-  /* .p18.on span:nth-of-type(1) {
-	top: -30em;
-	left: -20em;
-	rotate: 45deg;
-	font-size: 1rem;
-	opacity: 1;
-	transition: 0s .5s;
-	animation: heavy-shake 1s infinite;
-	opacity: 1;
-  }
   
-  .p18.on span:nth-of-type(2) {
-	top: -70em;
-	left: 25em;
-	rotate: 45deg;
-	font-size: .5rem;
+#closed-captions .p18.off {
 	opacity: 1;
-	transition: 0s .75s;
-	animation: heavy-shake .8s infinite;
-
-  }
-  
-  .p18.on span:nth-of-type(3) {
-	top: -25em;
-	left: 0em;
-	rotate: -45deg;
-	font-size: 1.5rem;
-	opacity: 1;
-	transition: 0s 1s;
-	animation: heavy-shake .9s infinite;
-  }
-  
-.p18.on span:nth-of-type(4) {
-	top: -16em;
-	left: 10em;
-	rotate: 10deg;
-	opacity: 1;
-	font-size: 2rem;
-	transition: 0s 1.25s;
-	animation: heavy-shake 1s infinite;
 }
-.p18.on span:nth-of-type(5) {
-	top: 2em;
-	left: 2em;
-	rotate: -20deg;
-	font-size: 3rem;
-	opacity: 1;
-	transition: 0s 1.5s;
-	animation: heavy-shake 1.5s infinite;
-}
-
-.p18.on span:nth-of-type(6) {
-	top: 8em;
-	left: 28em;
-	rotate: 30deg;
-	font-size: 1rem;
-	opacity: 1;
-	transition: 0s 1.75s;
-	animation: heavy-shake .7s infinite;
-  }
-  
-  .p18.on span:nth-of-type(7) {
-	top: 13dvh;
-	left: 50dvw;
-	rotate: -15deg;
-	font-size: 3rem;
-	opacity: 1;
-	transition: 0s 2s;
-	animation: heavy-shake 1.1s infinite;
-  } */
-
-  
 
   @keyframes heavy-shake {
 	0% { transform: translate(0px, 0px) rotate(0deg); }
@@ -231,7 +174,7 @@ Sounds.
 *********************************************  */
 
 .sound1 {
-	background: rgb(71, 71, 71);
+	background: rgb(170, 170, 170);
 }
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
@@ -250,6 +193,7 @@ body {
 	height: 100dvh;
 	margin: 0;
 	justify-content: center;
+	overflow: hidden;
 }
 #video-container {
 	margin: auto;
