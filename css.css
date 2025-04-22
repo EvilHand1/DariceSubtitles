@@ -5,11 +5,15 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
-
+    text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
 }
 #closed-captions .on {
 	opacity: 1;
@@ -18,19 +22,12 @@ Feel free to adjust the defaults to your needs.
 	transition: .2s;
 	opacity: 0;
 }
-.voice1 {
-	font-style: italic;
-}
-.voice2 {
-	font-weight: bold;
-}
 
 .MonsterCue {
 	font-family: sans-serif;
 	color: white;
 	background-color: black;
 	font-size: 2rem;
-	left: 46%;
 }
 
 .audiocue{
@@ -38,15 +35,44 @@ Feel free to adjust the defaults to your needs.
 	color: white;
 	background-color: black;
 	font-size: 2rem;
-	left: 40%;
 }
 .voice5 {
 	font-family: sans-serif;
 	color: white;
 	background-color: black;
-	font-size: 2rem;
-	left: 46%;
+	font-size: 3rem;
+	margin: 1.5rem;
 }
+
+.voice5.on {
+	opacity: 1;
+	animation: light-shake 1s 1;
+}
+
+.voice5.on.p22 {
+	user-select: none;
+	font-size: 4rem;
+	position: absolute;
+	opacity: 1;
+	animation: light-shake 1s 1;
+}
+
+.voice5.on.p23 {
+	user-select: none;
+	font-size: 5rem;
+	position: absolute;
+	opacity: 1;
+	animation: light-shake 1s 1;
+}
+
+.voice5.on.p24 {
+	user-select: none;
+	font-size: 6rem;
+	position: absolute;
+	opacity: 1;
+	animation: light-shake 1s 1;
+}
+
 /* **********************************************
 The first paragraph, with extended timing for 
 	all siblings. Basically what it does is that
@@ -56,10 +82,11 @@ The first paragraph, with extended timing for
 You probably want to change the styling.
 ********************************************** */
 
-/* .p18 {
-	 position: relative;
+#closed-captions .p18 {
+	left: 31%;
+	transform: translateX(0%);
   }
-  */
+ 
   .p18 span {
 	position: absolute;
 	opacity: 0;
@@ -142,7 +169,6 @@ You probably want to change the styling.
 	transition: opacity 3s 6s;
 }
 
-  
 #closed-captions .p18.off {
 	opacity: 1;
 }
@@ -161,10 +187,19 @@ You probably want to change the styling.
 	100% { transform: translate(0px, 0px) rotate(0deg); }
   }
 
-.p1.on {
-	background: hotpink;
-	color: red;
-}
+  @keyframes light-shake {
+	0%   { transform: translate(-50%, 0%) rotate(0deg); }
+	10%  { transform: translate(-52%, -0.5%) rotate(-0.5deg); }
+	20%  { transform: translate(-48%, 0.5%) rotate(0.5deg); }
+	30%  { transform: translate(-51.5%, 0.5%) rotate(-0.4deg); }
+	40%  { transform: translate(-48.5%, -0.5%) rotate(0.4deg); }
+	50%  { transform: translate(-51%, 0.5%) rotate(0deg); }
+	60%  { transform: translate(-49%, -0.5%) rotate(0.3deg); }
+	70%  { transform: translate(-50.5%, 0.5%) rotate(-0.3deg); }
+	80%  { transform: translate(-49.5%, -0.5%) rotate(0deg); }
+	90%  { transform: translate(-50.3%, 0.3%) rotate(0.2deg); }
+	100% { transform: translate(-50%, 0%) rotate(0deg); }
+  }
 
 /* **********************************************
 Sounds.
@@ -199,13 +234,11 @@ body {
 	margin: auto;
 }
 #video-mask {
-
 	--height: 50vh;
 	--width: calc(var(var(--height)) * 2);
 	height: var(--height);
 	width: var(--width);
 	display: grid;
-
 	align-content: center;
 	transition: 1s;
 }
