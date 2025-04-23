@@ -128,14 +128,44 @@ You probably want to change the styling.
 	opacity: 1;
 	/* transition: opacity 0.3s 6.8s; */
 }
+/* 
+Deze fade is groep voor groep, en ze zijn ook op verschillende punten helemaal weg
+*/
+/* 10th fades out first */
+#closed-captions .p18.off span:nth-of-type(10n) {
+	opacity: 0;
+	transition: opacity 3s 6.5s;
+}
 
+/* Then 9th */
+#closed-captions .p18.off span:nth-of-type(9n) {
+	opacity: 0;
+	transition: opacity 4s .5s;
+}
 
+/* Then 7th */
+#closed-captions .p18.off span:nth-of-type(7n) {
+	opacity: 0;
+	transition: opacity 4s 1s;
+}
+
+/* Then 4th */
+#closed-captions .p18.off span:nth-of-type(4n) {
+	opacity: 0;
+	transition: opacity 4s 1.5s;
+}
+
+/* Then 3rd */
+#closed-captions .p18.off span:nth-of-type(3n) {
+	opacity: 0;
+	transition: opacity 3s 0s;
+}
 
 /* The rest (fallback for unmatched spans) */
 #closed-captions .p18.off span {
 	animation: heavy-shake infinite;
 	opacity: 0;
-	transition: opacity 11s 0s;
+	transition: opacity 3s 6s;
 }
 
 #closed-captions .p18.off {
