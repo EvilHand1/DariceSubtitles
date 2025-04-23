@@ -44,33 +44,30 @@ Feel free to adjust the defaults to your needs.
 	margin: 1.5rem;
 }
 
-.voice5.on {
+.voice5.on.p21 {
 	opacity: 1;
 	animation: light-shake 1s 1;
 }
 
 .voice5.on.p22 {
 	user-select: none;
-	font-size: 5rem;
 	position: absolute;
 	opacity: 1;
-	animation: light-shake 1s 1;
+	animation: light-shake 1s 8;
 }
 
 .voice5.on.p23 {
 	user-select: none;
-	font-size: 7rem;
 	position: absolute;
 	opacity: 1;
-	animation: light-shake 1s 1;
+	animation: light-shake .5s 1;
 }
 
 .voice5.on.p24 {
 	user-select: none;
-	font-size: 10rem;
 	position: absolute;
 	opacity: 1;
-	animation: light-shake 1s 1;
+	animation: light-shake .5s 16;
 }
 
 /* **********************************************
@@ -135,38 +132,38 @@ You probably want to change the styling.
 /* 10th fades out first */
 #closed-captions .p18.off span:nth-of-type(10n) {
 	opacity: 0;
-	transition: opacity 3s 6.5s;
+	/* transition: opacity 3s 6.5s; */
 }
 
 /* Then 9th */
 #closed-captions .p18.off span:nth-of-type(9n) {
 	opacity: 0;
-	transition: opacity 3s .5s;
+	/* transition: opacity 3s .5s; */
 }
 
 /* Then 7th */
 #closed-captions .p18.off span:nth-of-type(7n) {
 	opacity: 0;
-	transition: opacity 3s 1s;
+	/* transition: opacity 3s 1s; */
 }
 
 /* Then 4th */
 #closed-captions .p18.off span:nth-of-type(4n) {
 	opacity: 0;
-	transition: opacity 3s 1.5s;
+	/* transition: opacity 3s 1.5s; */
 }
 
 /* Then 3rd */
 #closed-captions .p18.off span:nth-of-type(3n) {
 	opacity: 0;
-	transition: opacity 3s 0s;
+	/* transition: opacity 3s 0s; */
 }
 
 /* The rest (fallback for unmatched spans) */
 #closed-captions .p18.off span {
 	animation: heavy-shake infinite;
 	opacity: 0;
-	transition: opacity 3s 6s;
+	/* transition: opacity 3s 6s; */
 }
 
 #closed-captions .p18.off {
