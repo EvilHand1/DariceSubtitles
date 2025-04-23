@@ -51,7 +51,7 @@ Feel free to adjust the defaults to your needs.
 
 .voice5.on.p22 {
 	user-select: none;
-	font-size: 4rem;
+	font-size: 5rem;
 	position: absolute;
 	opacity: 1;
 	animation: light-shake 1s 1;
@@ -59,7 +59,7 @@ Feel free to adjust the defaults to your needs.
 
 .voice5.on.p23 {
 	user-select: none;
-	font-size: 5rem;
+	font-size: 7rem;
 	position: absolute;
 	opacity: 1;
 	animation: light-shake 1s 1;
@@ -67,7 +67,7 @@ Feel free to adjust the defaults to your needs.
 
 .voice5.on.p24 {
 	user-select: none;
-	font-size: 6rem;
+	font-size: 10rem;
 	position: absolute;
 	opacity: 1;
 	animation: light-shake 1s 1;
