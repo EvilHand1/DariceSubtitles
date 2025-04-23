@@ -25,14 +25,14 @@ captions[16] = ['30.9','33.8'];
 captions[17] = ['33.8','54.8']
 captions[18] = ['33.9','55.1'];
 captions[19] = ['55.2','60.0'];
-captions[20] = ['60','64.7'];
+captions[20] = ['60','63.5'];
 
 
 	//big alien
-captions[21] = ['64.7','66.1'];
-captions[22] = ['67.6','68.0'];
+captions[21] = ['63.5','64.5'];
+captions[22] = ['67.6','68.5'];
 captions[23] = ['71.0','72.2'];
-captions[24] = ['73.3','74.0'];
+captions[24] = ['73.3','74.4'];
 
 //Did they teach you how to feel, finger to finger?
 captions[25] = ['120','121'];
