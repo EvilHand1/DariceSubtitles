@@ -6,7 +6,6 @@ Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
 
-
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
@@ -42,35 +41,6 @@ Feel free to adjust the defaults to your needs.
 	background-color: black;
 	font-size: 3rem;
 	margin: 1.5rem;
-}
-
-.voice5.on {
-	opacity: 1;
-	animation: light-shake 1s 1;
-}
-
-.voice5.on.p22 {
-	user-select: none;
-	font-size: 5rem;
-	position: absolute;
-	opacity: 1;
-	animation: light-shake 1s 1;
-}
-
-.voice5.on.p23 {
-	user-select: none;
-	font-size: 7rem;
-	position: absolute;
-	opacity: 1;
-	animation: light-shake 1s 1;
-}
-
-.voice5.on.p24 {
-	user-select: none;
-	font-size: 10rem;
-	position: absolute;
-	opacity: 1;
-	animation: light-shake 1s 1;
 }
 
 /* **********************************************
@@ -141,19 +111,19 @@ You probably want to change the styling.
 /* Then 9th */
 #closed-captions .p18.off span:nth-of-type(9n) {
 	opacity: 0;
-	transition: opacity 3s .5s;
+	transition: opacity 4s .5s;
 }
 
 /* Then 7th */
 #closed-captions .p18.off span:nth-of-type(7n) {
 	opacity: 0;
-	transition: opacity 3s 1s;
+	transition: opacity 4s 1s;
 }
 
 /* Then 4th */
 #closed-captions .p18.off span:nth-of-type(4n) {
 	opacity: 0;
-	transition: opacity 3s 1.5s;
+	transition: opacity 4s 1.5s;
 }
 
 /* Then 3rd */
@@ -171,6 +141,27 @@ You probably want to change the styling.
 
 #closed-captions .p18.off {
 	opacity: 1;
+}
+
+.voice5.on {
+	opacity: 1;
+	animation: light-shake 1s 16;
+}
+
+.voice5.on.p22 {
+	font-size: 4rem;
+	position: absolute;
+}
+
+.voice5.on.p23 {
+	font-size: 5rem;
+	position: absolute;
+}
+
+.voice5.on.p24 {
+	font-size: 6rem;
+	position: absolute;
+	animation: light-shake .5s 32;
 }
 
   @keyframes heavy-shake {
@@ -242,9 +233,3 @@ body {
 	align-content: center;
 	transition: 1s;
 }
-
-/* iframe {
-	width: 80vw;
-	height: 53.33333333vw;
-	margin-top: -0.35vw;
-} */
