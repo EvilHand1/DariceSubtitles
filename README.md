@@ -180,3 +180,5 @@ Darice
 Marie
 
 De klasgenoten met dezelfde opdrachtgever
+
+https://chat.openai.com/

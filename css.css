@@ -164,6 +164,7 @@ You probably want to change the styling.
 	animation: light-shake .5s 32;
 }
 
+/* gekregen van Matthijs */
   @keyframes heavy-shake {
 	0% { transform: translate(0px, 0px) rotate(0deg); }
 	10% { transform: translate(-8px, -2px) rotate(-2deg); }

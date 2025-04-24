@@ -40,6 +40,7 @@ function addSpans(){
 	updateTimerDisplay();
 }
 
+// gegeneerd met chatGPT, omdat ik niet hetzelfde 5 keer wou schrijven
 function RandomizeWords() {
 	const spans = document.querySelectorAll('.p18 span');
 	spans.forEach(span => {
